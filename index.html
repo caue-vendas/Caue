@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bistrô Zen | Caraguá Praia Shopping</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.95)), 
+                        url('https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=80') no-repeat center center fixed;
+            background-size: cover;
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            background: rgba(30, 41, 59, 0.78);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 28px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #090d16 0%, #1a233a 100%);
+            color: white;
+            padding: 35px 20px;
+            text-align: center;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #fef08a;
+            margin-bottom: 6px;
+            letter-spacing: 1px;
+        }
+
+        .header p {
+            font-size: 13px;
+            color: #94a3b8;
+            font-style: italic;
+        }
+
+        .location-badge {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.15);
+            color: #fef08a;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-top: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .content {
+            padding: 25px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fef08a;
+            margin: 20px 0 15px 5px;
+            border-left: 3px solid #fef08a;
+            padding-left: 8px;
+        }
+
+        .menu-card {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 18px;
+            padding: 16px;
+            margin-bottom: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .menu-card:hover {
+            background: rgba(15, 23, 42, 0.85);
+            border-color: rgba(212, 175, 55, 0.4);
+        }
+
+        .menu-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 15px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+
+        .menu-info p {
+            font-size: 12px;
+            color: #94a3b8;
+            line-height: 1.4;
+            margin-bottom: 8px;
+        }
+
+        .price {
+            font-size: 14px;
+            font-weight: 700;
+            color: #fef08a;
+        }
+
+        .btn-order {
+            background: linear-gradient(135deg, #d4af37 0%, #aa8c2c 100%);
+            color: #0f172a;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            white-space: nowrap;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+            transition: filter 0.2s;
+        }
+
+        .btn-order:hover {
+            filter: brightness(1.15);
+        }
+
+        .info-box {
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px dashed rgba(212, 175, 55, 0.3);
+            border-radius: 16px;
+            padding: 16px;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .info-box p {
+            font-size: 12px;
+            color: #cbd5e1;
+            line-height: 1.5;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 11px;
+            color: #64748b;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Cabeçalho -->
+    <div class="header">
+        <h1>Bistrô Zen</h1>
+        <p>Gastronomia refinada e momentos inesquecíveis</p>
+        <div class="location-badge">📍 Caraguá Praia Shopping • 1º Piso</div>
+    </div>
+
+    <div class="content">
+        <div class="section-title">Destaques do Cardápio</div>
+
+        <!-- Item 1 -->
+        <div class="menu-card">
+            <div class="menu-info">
+                <h3>Prato Executivo Especial</h3>
+                <p>Opções selecionadas do chef com acompanhamentos frescos da estação.</p>
+                <div class="price">Consulte o dia</div>
+            </div>
+            <a href="https://wa.me/5512966647952?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20cardápio%20do%20Bistrô%20Zen." target="_blank" class="btn-order">Pedir / Info</a>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="menu-card">
+            <div class="menu-info">
+                <h3>Porções & Petiscos Gourmet</h3>
+                <p>Ideal para acompanhar bebidas geladas em um ambiente acolhedor.</p>
+                <div class="price">Variados</div>
+            </div>
+            <a href="https://wa.me/5512966647952?text=Olá!%20Gostaria%20de%20consultar%20as%20porções%20disponíveis." target="_blank" class="btn-order">Pedir / Info</a>
+        </div>
+
+        <!-- Informações de Atendimento -->
+        <div class="info-box">
+            <p>🌿 <b>Estrutura Completa</b><br>Ambiente Pet Friendly, Área Kids e Wi-Fi disponível para clientes.</p>
+        </div>
+
+        <div class="footer">
+            Bistrô Zen • Caraguatatuba - SP
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
